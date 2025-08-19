@@ -2,22 +2,15 @@
 
 [![Java](https://img.shields.io/badge/Java-17-orange.svg)](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
 [![Maven](https://img.shields.io/badge/Maven-3.x-blue.svg)](https://maven.apache.org/)
+![HTTP](https://img.shields.io/badge/HTTP-1.1-blue) |
+![JSON](https://img.shields.io/badge/JSON-Supported-green?logo=json&logoColor=white) 
 
 ## Introducción
 
-Este es un prototipo basado en Java diseñado para implementar un servidor web usando sockets puros, sin frameworks externos.  
-El objetivo es proporcionar una plataforma funcional capaz de gestionar recursos como:
-
-- Atender múltiples solicitudes HTTP secuenciales o concurrentes (según la configuración con threads).  
-- Servir archivos estáticos del disco: páginas HTML, scripts JavaScript, hojas de estilo CSS e imágenes.  
-- Proporcionar servicios REST asíncronos implementados directamente con sockets Java.  
-- Comunicación bidireccional entre frontend y backend mediante APIs JSON.  
-
----
-
-## Autor
-
-- **Alison Valderrama**
+Este es un prototipo basado en Java diseñado para implementar un servidor web, el objetivo es proporcionar una plataforma funcional capaz de gestionar recuros como: 
+- Atender multiples solicitudes Http 
+- Leer archivos y retornar todo lo solicitado en los que se incluyen paginas html, archivos java script e imagenes 
+- Comunicación asincrónica entre el frontend y el backend a través de servicios REST personalizados implementados directamente en sockets Java.
 
 ---
 
@@ -99,11 +92,8 @@ El sistema está compuesto por tres módulos principales:
   - `GET /hello?name=John` → Respuesta con saludo personalizado.  
   - `POST /hellopost?name=John` → Respuesta en formato JSON.  
 
-- **Prueba de concurrencia**:  
-  Ejecución con múltiples clientes enviando solicitudes simultáneas para validar que el servidor puede atenderlas con hilos.  
-
 - **Prueba de navegador**:  
-  Acceso al frontend (`index.html`) y comunicación exitosa con el backend mediante AJAX y Fetch API.  
+  Acceso al frontend (`index.html`) y comunicación exitosa con el backend.
 
 ---
 
@@ -124,7 +114,11 @@ arep_httpserver/
     ├── style.css                              # Estilos CSS
     └── logo.png                               # Recursos multimedia
 ```
-
 ---
 
-- The Escuela Colombiana de Ingeniería community for inspiration.
+## Autor
+
+- [Alison Geraldine Valderrama Munar](https://github.com/alisongvalderrama)
+
+## License
+Este proyecto está licenciado bajo la MIT License
