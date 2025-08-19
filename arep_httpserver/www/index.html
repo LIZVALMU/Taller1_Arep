@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Server</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <header>
+    <h1>🌐 Servidor Java</h1>
+    <p>Pruebas de archivos estáticos y servicios REST asíncronos</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>GET /app/hello</h2>
+      <input type="text" id="name" value="Pedro" />
+      <button id="btnHelloGet">Enviar</button>
+      <pre class="response" id="respHelloGet"></pre>
+    </section>
+
+    <section>
+      <h2>POST /app/hello</h2>
+      <input type="text" id="namePost" value="Ana" />
+      <button id="btnHelloPost">Enviar</button>
+      <pre class="response" id="respHelloPost"></pre>
+    </section>
+
+    <section>
+      <h2>GET /app/time</h2>
+      <button id="btnTime">Consultar hora</button>
+      <pre class="response" id="respTime"></pre>
+    </section>
+
+
+    <section>
+      <h2>Archivos estáticos</h2>
+      <p>CSS y JS cargan desde el servidor. También una imagen:</p>
+      <img src="logo.png" alt="Logo de prueba" width="140" />
+    </section>
+  </main>
+
+  <footer>
+    <small>Arquitecturas • Java + Sockets</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
