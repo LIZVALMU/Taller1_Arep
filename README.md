@@ -50,7 +50,3 @@ arep_httpserver/
 
 ---
 
-<div align="center">
-  <b>a/b><br>
-  <i>Empowering well-being through technology</i>
-</div>
