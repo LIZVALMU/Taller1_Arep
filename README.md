@@ -46,19 +46,27 @@ Este es un prototipo basado en Java diseñado para implementar un servidor web, 
 
 ## Ejecución
 
-1. Ejecutar el servidor:
+1. Ingresar a la carpeta 
+    ```bash
+   cd arep_httpserver
+   ```
+2. Instalar las dependencias
+    ```bash
+   mvn clean compile
+   ```
+3. Ejecutar el servidor:
    ```bash
    java -cp target/arep_httpserver-1.0-SNAPSHOT.jar escuela.edu.co.HttpServer
    ```
 
-2. Abrir en un navegador:
+4. Abrir en un navegador:
    ```
    http://localhost:35000/index.html
    ```
 
    > El servidor por defecto corre en el puerto `35000`.  
 
-3. Para probar los servicios REST (ejemplo):
+5. Para probar los servicios REST (ejemplo):
    - GET: `http://localhost:35000/hello?name=Alison`
    - POST: `http://localhost:35000/hellopost?name=Alison`
 
